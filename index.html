@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acolher - Projeto acadêmico de conscientização e apoio emocional.">
+    <title>Acolher | Setembro Amarelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container nav">
+        <a href="#inicio" class="logo"><span class="logo-icon">☀</span><span>Acolher</span></a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#respirar">Respirar</a>
+            <a href="#humor">Como estou?</a>
+            <a href="#ajuda">Onde buscar ajuda</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <span class="tag">SETEMBRO AMARELO</span>
+            <h1>Você não precisa <span>passar por tudo sozinho.</span></h1>
+            <p>Um espaço criado para incentivar o cuidado, a escuta e a busca por ajuda quando necessário.</p>
+            <div class="hero-buttons">
+                <a href="tel:188" class="btn btn-primary">☎ Ligue 188</a>
+                <a href="#respirar" class="btn btn-secondary">Quero respirar</a>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="sun">☀</div>
+            <h3>Um passo de cada vez.</h3>
+            <p>Reserve alguns minutos para cuidar de você.</p>
+        </div>
+    </div>
+</section>
+
+<section class="quote-section">
+    <div class="container quote"><span>“</span><p>Cuidar da saúde emocional também é uma forma de cuidar da vida.</p></div>
+</section>
+
+<section class="section" id="respirar">
+    <div class="container">
+        <div class="section-title">
+            <span class="tag">PAUSA</span>
+            <h2>Vamos respirar?</h2>
+            <p>Faça uma pequena pausa e acompanhe o ritmo da animação.</p>
+        </div>
+        <div class="breathing-card">
+            <div class="breathing-area">
+                <div class="breathing-circle" id="breathingCircle"><span id="breathingText">Pronto?</span></div>
+            </div>
+            <div class="breathing-info">
+                <h3>Exercício de respiração</h3>
+                <p>Encontre uma posição confortável e acompanhe as instruções apresentadas na tela.</p>
+                <div class="steps">
+                    <div><strong>01</strong><span>Inspire</span></div>
+                    <div><strong>02</strong><span>Segure</span></div>
+                    <div><strong>03</strong><span>Expire</span></div>
+                </div>
+                <button class="btn btn-primary" id="breathingBtn">Começar exercício</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section mood-section" id="humor">
+    <div class="container">
+        <div class="section-title">
+            <span class="tag">AUTOCUIDADO</span>
+            <h2>Como você está hoje?</h2>
+            <p>Escolha uma opção que represente como você está se sentindo.</p>
+        </div>
+        <div class="mood-grid">
+            <button class="mood-card" data-message="Que bom! Continue cuidando de você e aproveitando os momentos positivos."><span>😊</span><strong>Muito bem</strong></button>
+            <button class="mood-card" data-message="Fico feliz que você esteja bem. Continue valorizando seu bem-estar."><span>🙂</span><strong>Bem</strong></button>
+            <button class="mood-card" data-message="Tudo bem ter dias neutros. Permita-se perceber como você está sem se cobrar."><span>😐</span><strong>Neutro</strong></button>
+            <button class="mood-card" data-message="Talvez seja um bom momento para conversar com alguém em quem você confia."><span>😔</span><strong>Não estou bem</strong></button>
+            <button class="mood-card" data-message="Você merece apoio. Procure alguém de confiança ou um profissional de saúde para conversar."><span>🤝</span><strong>Quero conversar</strong></button>
+        </div>
+        <div class="mood-result" id="moodResult"><span>🌱</span><p>Escolha uma opção acima.</p></div>
+    </div>
+</section>
+
+<section class="section" id="ajuda">
+    <div class="container">
+        <div class="section-title">
+            <span class="tag">REDE DE APOIO</span>
+            <h2>Onde buscar ajuda?</h2>
+            <p>Existem diferentes lugares e profissionais que podem oferecer orientação e acolhimento.</p>
+        </div>
+        <div class="help-grid">
+            <article class="help-card"><div class="help-icon">🏥</div><h3>CAPS</h3><p>Os Centros de Atenção Psicossocial oferecem atendimento especializado em saúde mental.</p></article>
+            <article class="help-card"><div class="help-icon">🩺</div><h3>UBS</h3><p>A Unidade Básica de Saúde pode orientar sobre os serviços disponíveis na sua região.</p></article>
+            <article class="help-card"><div class="help-icon">🎓</div><h3>Clínicas-escola</h3><p>Algumas instituições de ensino oferecem serviços de atendimento psicológico supervisionado.</p></article>
+            <article class="help-card highlight"><div class="help-icon">☎</div><h3>CVV — 188</h3><p>O Centro de Valorização da Vida oferece apoio emocional gratuitamente pelo telefone 188.</p><a href="tel:188" class="small-btn">Ligar para 188</a></article>
+        </div>
+    </div>
+</section>
+
+<section class="support">
+    <div class="container support-content">
+        <div>
+            <span class="tag">VOCÊ IMPORTA</span>
+            <h2>Pedir ajuda também é uma forma de coragem.</h2>
+            <p>Se estiver passando por um momento difícil, considere conversar com alguém de confiança e buscar apoio profissional.</p>
+        </div>
+        <a href="tel:188" class="btn btn-dark">☎ CVV — 188</a>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">☀ Acolher</div>
+        <p>Projeto acadêmico desenvolvido para a atividade de Setembro Amarelo — Desenvolvimento de Sistemas.</p>
+        <p class="legal">Este site é um projeto acadêmico para fins educativos e de conscientização. Ele não substitui atendimento psicológico, médico ou outro atendimento profissional.</p>
+        <div class="footer-bottom"><span>© 2026 Acolher</span><span>HTML • CSS • JavaScript</span></div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

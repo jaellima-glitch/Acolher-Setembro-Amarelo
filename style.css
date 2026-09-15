@@ -1,0 +1,43 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:#fbfaf6;color:#30332f;line-height:1.6}
+a{text-decoration:none;color:inherit}button{font-family:inherit}
+.container{width:min(1120px,90%);margin:auto}
+.header{position:sticky;top:0;z-index:100;background:rgba(251,250,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e9e5da}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:700}
+.logo-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#f3c84b;color:#604b10}
+nav{display:flex;gap:30px}nav a{font-size:14px;font-weight:600;color:#65685f;transition:.2s}nav a:hover{color:#b48a16}
+.menu-btn{display:none;border:none;background:none;font-size:26px;cursor:pointer}
+.hero{min-height:620px;display:flex;align-items:center;background:radial-gradient(circle at 85% 20%,#f7e7a9 0,transparent 28%),#fbfaf6}
+.hero-content{display:grid;grid-template-columns:1.25fr .75fr;gap:80px;align-items:center}
+.tag{display:inline-block;color:#ae8618;font-size:12px;font-weight:700;letter-spacing:2px;margin-bottom:18px}
+.hero h1{max-width:680px;font-family:"Playfair Display",serif;font-size:clamp(44px,6vw,76px);line-height:1.05;color:#30332f}
+.hero h1 span{display:block;color:#c59b24}.hero-text p{max-width:560px;margin:25px 0 32px;color:#686b63;font-size:17px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:14px}.btn{border-radius:12px;padding:14px 22px;display:inline-flex;justify-content:center;align-items:center;gap:8px;border:none;cursor:pointer;font-weight:700;transition:.25s}
+.btn-primary{background:#d4ab31;color:#fff}.btn-primary:hover{transform:translateY(-2px);background:#bb941f}
+.btn-secondary{background:#efede5;color:#4e514b}.btn-secondary:hover{background:#e5e1d5}
+.btn-dark{background:#30332f;color:#fff}.btn-dark:hover{transform:translateY(-2px)}
+.hero-card{min-height:360px;border-radius:30px;padding:45px;display:flex;flex-direction:column;justify-content:flex-end;background:#f4d875;box-shadow:0 20px 50px rgba(91,76,26,.12)}
+.sun{margin-bottom:auto;width:110px;height:110px;border-radius:50%;background:#fff7d8;display:grid;place-items:center;font-size:48px}
+.hero-card h3{font-family:"Playfair Display",serif;font-size:30px}.hero-card p{color:#66551f;margin-top:8px}
+.quote-section{background:#30332f;color:white}.quote{padding:55px 0;display:flex;align-items:center;gap:25px;max-width:900px}.quote span{font-family:"Playfair Display",serif;font-size:80px;color:#e4c65d;line-height:0}.quote p{font-family:"Playfair Display",serif;font-size:25px}
+.section{padding:100px 0}.section-title{max-width:650px;margin-bottom:50px}.section-title h2{font-family:"Playfair Display",serif;font-size:clamp(36px,5vw,52px);line-height:1.1}.section-title p{color:#74776f;margin-top:15px}
+.breathing-card{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:#f1eee4;border-radius:28px;overflow:hidden}
+.breathing-area{min-height:470px;display:grid;place-items:center;background:#eee8d6}
+.breathing-circle{width:210px;height:210px;border-radius:50%;background:#e1bf4c;display:grid;place-items:center;color:white;font-size:20px;font-weight:700;box-shadow:0 0 0 25px rgba(225,191,76,.13);transition:transform 4s ease-in-out}
+.breathing-circle.inhale{transform:scale(1.35)}.breathing-circle.exhale{transform:scale(1)}
+.breathing-info{padding:55px}.breathing-info h3{font-family:"Playfair Display",serif;font-size:32px}.breathing-info p{color:#6f726a;margin:15px 0 30px}
+.steps{display:flex;gap:25px;margin-bottom:35px}.steps div{display:flex;flex-direction:column;gap:3px}.steps strong{color:#bd951f}.steps span{font-size:13px}
+.mood-section{background:#f4f1e8}.mood-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
+.mood-card{border:1px solid #e4dfd2;background:#fbfaf6;border-radius:18px;padding:25px 10px;cursor:pointer;transition:.25s;color:#383b36}
+.mood-card:hover,.mood-card.selected{transform:translateY(-5px);border-color:#d5ae3a;box-shadow:0 12px 25px rgba(67,59,31,.08)}
+.mood-card span{display:block;font-size:35px;margin-bottom:12px}.mood-card strong{font-size:13px}
+.mood-result{margin-top:25px;padding:20px;background:#fffdf7;border-radius:15px;display:flex;align-items:center;gap:12px;color:#686b63}.mood-result span{font-size:25px}
+.help-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.help-card{padding:30px;border-radius:20px;background:#f1eee5;min-height:270px}
+.help-icon{font-size:35px;margin-bottom:20px}.help-card h3{font-family:"Playfair Display",serif;font-size:25px}.help-card p{color:#71746c;margin-top:10px;font-size:14px}
+.help-card.highlight{background:#f1d56e}.help-card.highlight p{color:#625421}.small-btn{display:inline-block;margin-top:20px;padding:10px 15px;background:#30332f;color:white;border-radius:9px;font-size:13px;font-weight:700}
+.support{padding:80px 0;background:#e8c957}.support-content{display:flex;align-items:center;justify-content:space-between;gap:40px}.support h2{max-width:680px;font-family:"Playfair Display",serif;font-size:clamp(32px,5vw,48px);line-height:1.1}.support p{max-width:650px;margin-top:15px;color:#5e511f}
+.footer{padding:50px 0 25px;background:#30332f;color:white}.footer-logo{font-size:22px;font-weight:700;margin-bottom:15px}.footer p{max-width:700px;color:#c8c9c4;font-size:14px}.footer .legal{margin-top:18px;color:#a9aaa5;font-size:12px}.footer-bottom{border-top:1px solid #4a4d47;margin-top:30px;padding-top:20px;display:flex;justify-content:space-between;color:#a9aaa5;font-size:12px}
+@media(max-width:850px){.menu-btn{display:block}nav{display:none;position:absolute;top:76px;left:0;width:100%;padding:20px;flex-direction:column;background:#fbfaf6;border-bottom:1px solid #e9e5da;gap:18px}nav.active{display:flex}.hero{padding:70px 0}.hero-content{grid-template-columns:1fr;gap:50px}.hero-card{min-height:300px}.breathing-card{grid-template-columns:1fr}.mood-grid{grid-template-columns:repeat(2,1fr)}.help-grid{grid-template-columns:repeat(2,1fr)}.support-content{flex-direction:column;align-items:flex-start}}
+@media(max-width:500px){.hero h1{font-size:44px}.section{padding:70px 0}.breathing-info{padding:30px}.steps{gap:15px}.mood-grid,.help-grid{grid-template-columns:1fr}.quote p{font-size:20px}.footer-bottom{flex-direction:column;gap:8px}}
